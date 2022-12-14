@@ -148,11 +148,11 @@ main {
 }
 
 .card-url a:hover {
-  color: var(--gray);
+  color: #6ecfec;
 }
 
 .card-url a:active {
-  color: var(--gray);
+  color: #6ecfec;
 }
 
 .project-img {
