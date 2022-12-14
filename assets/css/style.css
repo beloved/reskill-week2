@@ -147,6 +147,14 @@ main {
   padding-top: 3em;
 }
 
+.card-url a:hover {
+  color: var(--gray);
+}
+
+.card-url a:active {
+  color: var(--gray);
+}
+
 .project-img {
   max-width: 50%;
   padding-bottom: 2em;
