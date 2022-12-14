@@ -1,0 +1,336 @@
+:root {
+  --gray: #c9caca;
+  --secondary-color: #011b22;
+  --accent-color: #00b0dc;
+  --primary-color: #fff;
+}
+
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+
+button {
+  font: inherit;
+  color: inherit;
+  cursor: pointer;
+}
+
+p {
+  line-height: 2;
+}
+
+html,
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
+  line-height: 1;
+  color: var(--secondary-color);
+}
+
+.container {
+  min-height: 100vh;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+}
+
+/* Header */
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 4em;
+  background-color: var(--secondary-color);
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo {
+  width: 75px;
+}
+
+.logo-title {
+  color: var(--accent-color);
+  font-family: "Dancing Script", cursive;
+  font-size: 1.25em;
+}
+
+.menu-open,
+.menu-close {
+  display: none;
+}
+
+.nav-items {
+  display: flex;
+  gap: 20px;
+  color: var(--gray);
+}
+
+a:link {
+  color: var(--primary-color);
+}
+
+a:visited {
+  color: var(--primary-color);
+}
+a:hover {
+  color: var(--accent-color);
+}
+
+a:active {
+  color: var(--accent-color);
+}
+
+/* Main */
+
+main {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  padding: 4em;
+}
+
+.title-bar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 100%;
+  background-image: url(../images/ui-element-173.png);
+  font-family: "Dancing Script", cursive;
+  color: var(--accent-color);
+}
+
+.main-title {
+  font-size: 3em;
+}
+
+.form-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  justify-content: center;
+  padding: 3em;
+}
+
+form {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: url(../images/ui-element-006x3.png) no-repeat top center;
+  background-size: cover;
+  padding: 6em 4em;
+  max-height: 100%;
+  max-width: 100%;
+  color: var(--primary-color);
+}
+
+.form-img {
+  width: 75px;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  align-self: center;
+  position: absolute;
+  top: 15px;
+}
+
+input,
+select,
+textarea,
+button {
+  background-color: var(--primary-color);
+  border: none;
+  padding: 15px 20px;
+  margin: 0 0 10px 20px;
+  width: 60%;
+}
+
+label {
+  color: var(--primary-color);
+  padding-bottom: 10px;
+  margin-left: 9em;
+  align-self: flex-start;
+}
+
+button {
+  margin-top: 30px;
+  padding: 15px 20px;
+  color: var(--accent-color);
+}
+
+/* Footer */
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100px;
+  background-color: var(--secondary-color);
+  color: var(--gray);
+}
+
+/* Media Queries */
+@media (min-width: 1200px) {
+  main {
+    padding: 2em 0;
+  }
+
+  input,
+  select,
+  textarea,
+  button {
+    width: 50%;
+    margin-bottom: 10px;
+  }
+
+  button {
+    margin-top: 6em;
+  }
+}
+
+@media (max-width: 1280px) {
+  .contact-img {
+    display: none;
+  }
+
+  main {
+    padding: 2em 0;
+  }
+
+  .form-container {
+    grid-template-columns: 1fr;
+    padding: 0;
+  }
+
+  .form-img {
+    top: 30px;
+  }
+
+  label {
+    margin-left: 19em;
+  }
+
+  input,
+  select,
+  textarea,
+  button {
+    width: 50%;
+    margin-bottom: 10px;
+  }
+
+  button {
+    margin-top: 6em;
+  }
+}
+
+@media (max-width: 992px) {
+  header {
+    padding: 0 1em;
+  }
+
+  label {
+    margin-left: 15em;
+  }
+
+  input,
+  select,
+  textarea,
+  button {
+    width: 50%;
+  }
+}
+
+@media (max-width: 768px) {
+  .logo-title {
+    display: none;
+  }
+
+  label {
+    margin-left: 7em;
+  }
+
+  input,
+  select,
+  textarea,
+  button {
+    width: 70%;
+  }
+}
+
+@media (max-width: 576px) {
+  label {
+    margin-left: 2em;
+  }
+
+  input,
+  select,
+  textarea,
+  button {
+    width: 90%;
+  }
+}
+
+@media (max-width: 420px) {
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .nav-item {
+    display: none;
+  }
+
+  nav {
+    flex-direction: column;
+    padding: 0px 0 30px 15px;
+  }
+
+  .menu-open {
+    display: inline;
+  }
+
+  .menu-open,
+  .menu-close {
+    color: var(--primary-color);
+    font-size: 2em;
+    cursor: pointer;
+    position: relative;
+    top: -50px;
+    left: 85%;
+  }
+
+  .menu-open:hover,
+  .menu-close:hover {
+    color: var(--accent-color);
+  }
+
+  i.menu-close {
+    display: none;
+  }
+
+  label {
+    margin-left: 0.75em;
+  }
+
+  input,
+  select,
+  textarea,
+  button {
+    width: 100%;
+  }
+}

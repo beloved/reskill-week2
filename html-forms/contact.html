@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/css/contact.css?v=3" type="text/css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/c25dbc33a4.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Amy Funderburg - Contact Us</title>
+  </head>
+  <body>
+    <div class="container">
+      <header class="navbar">
+        <div class="logo-container">
+          <img class="logo" src="assets/images/logo-dark.png" alt="logo" />
+          <p class="logo-title">Amy Funderburg</p>
+        </div>
+        <i class="fa-solid fa-bars menu-open"></i>
+        <i class="fa-solid fa-xmark menu-close"></i>
+        <nav class="nav-items">
+          <a class="nav-item" href="index.html">HOME</a>
+          <a class="nav-item" href="services.html">SERVICES</a>
+          <a class="nav-item" href="contact.html">CONTACT</a>
+        </nav>
+      </header>
+      <main>
+        <div class="title-bar">
+          <h1 class="main-title">Contact Us</h1>
+        </div>
+        <div class="form-container">
+          <img
+            class="contact-img"
+            src="assets/images/interaction-21.png"
+            alt="woman interacting with phone"
+          />
+          <form action="" method="post">
+            <img class="form-img" src="assets/images/logo.png" alt="logo" />
+            <label for="name">Name *</label>
+            <input id="name" type="text" name="name" required />
+            <label for="email">Email *</label>
+            <input id="email" type="email" name="email" required />
+            <label for="message">Message *</label>
+            <textarea id="message" name="message" rows="6" required> </textarea>
+            <label for="priority">Priority </label>
+            <select id="priority" name="priority" required>
+              <option value="Low" selected>Low</option>
+              <option value="Medium">Medium</option>
+              <option value="High">High</option>
+            </select>
+            <p>* All fields required</p>
+            <button id="submit" type="submit" name="submit">Submit</button>
+          </form>
+        </div>
+      </main>
+      <footer>
+        <small>&copy;Copyright 2022 by Amy Funderburg</small>
+      </footer>
+    </div>
+    <script src="assets/js/menu.js"></script>
+  </body>
+</html>
